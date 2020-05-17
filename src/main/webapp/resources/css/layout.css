@@ -1,0 +1,107 @@
+body {
+    background-color: #1f1f1f;
+}
+
+.site-header {
+    background-color: rgba(0, 0, 0);
+    margin-bottom: 2em;
+}
+
+.site-footer {
+    margin-top: 2.5em;
+}
+
+.wrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.site-footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper.wrapper-content {
+    /* max-width: 39rem; */
+    flex: 0 0 65%;
+    margin: 0 0;
+}
+
+.wrapper.wrapper-aside {
+    /* max-width: 10rem; */
+    flex: 0 0 30%;
+    margin: 0 0;
+}
+
+.form {
+    border: none;
+    border-radius: 0.4em;
+    max-width: 60rem;
+    font-size: 12px;
+    padding: 2.1em 2.5em;
+    background-color: #131313;
+}
+
+.site-footer .form {
+    flex: 0 0 30%;
+    height: 25em;
+}
+
+/* header */
+
+.site-header .shop {
+    border-bottom: 1px solid #0B0B0B;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em 0;
+    width: 30em;
+    margin-left: auto;
+    align-items: center;
+}
+
+.shop {
+    align-items: center;
+}
+
+.shop > * {
+    margin: 0 0.5em;
+}
+
+.site-branding img{
+    width: 10em;
+    height: auto;
+}
+
+/* header */
+
+.card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:before,
+.card:after {
+    display: block;
+    content: '';
+}
+
+.card img {
+    display: block;
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    top: 0%; right: 0;
+    transform: translate(-7%, 5%);
+}
+
+li.card img{
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, 0%);
+}
