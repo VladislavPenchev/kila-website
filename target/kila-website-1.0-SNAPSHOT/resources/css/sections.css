@@ -1,0 +1,255 @@
+.shop .form-search input,
+.shop .shop-card span{
+    border: none;
+    border-radius: 1em;
+    background-color: rgba(78, 78, 78, 0.4);
+    color: #868686;
+    padding: 0.2em 0.5em;
+}
+
+.shop .shop-card span {
+    color: #FFF;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.section-title {
+    border-bottom: 1px solid #080808;
+    box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    margin-bottom: 0.6em;
+}
+
+.section-title h4{
+    margin:0;
+    padding: 0;
+    color: #fff;
+    width: 12.7%;   
+    font-size: 20px;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #3ec945;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.section-content ul {
+    margin:0;
+    padding: 0;
+}
+
+.section-content li {
+    margin:0;
+    padding: 1.5em 0;
+    list-style: none;
+}
+
+.section-content a {
+    margin:0;
+    padding: 0;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.site-footer .section-title h4{
+    width: 54.7%;   
+    font-size: 19px;
+    border-color: #8224e3;
+}
+
+.created-by {
+    background-color: #131313;
+    margin-top: 4em;
+    padding: 1.5em 0;
+    font-size: 13px;
+}
+
+.created-by p{
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+.created-by span{
+    color: #fff;
+}
+
+.section-paging {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+
+.section-paging span {
+    color: #fff;
+    border: none;
+    padding: 1em;
+    border-radius: 0.3em;
+    background-color: #0B0B0B;
+}
+
+.section-gallery {
+    margin-top: 2em;
+}
+
+.section-gallery ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-gallery li {
+    list-style: none;
+    flex: 0 0 15%;
+    margin-top: 0.5em;
+}
+
+.section-gallery h3 {
+    color: #FFF;
+    font-weight: 700;
+}
+
+.section-gallery .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-gallery .images img {
+    display: block;
+    flex: 0 0 15%;
+    width: 9em;
+    height: 10.5em;
+    border: 1px solid #666;
+    margin-bottom: 1.5em;
+}
+
+
+.section-sidebar {
+    border: 1px solid saddlebrown;
+    display: block;
+    width: auto;
+    height: 15em;
+}
+
+.section-content-aside ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-content-aside li {
+    border: 1px solid saddlebrown;
+    display: flex;
+    justify-content: space-between;
+}
+.section-content-aside .img img {
+    border: 2px solid #FFF;
+    width: 6em;
+}
+
+.section-content-aside .content {
+    width: 14em;
+}
+
+.section-article {
+
+}
+
+.section-article ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-article li {
+    border: 1px solid salmon;   
+    display: flex;
+    width: 100%;
+    height: 30em;
+    justify-content: space-between;
+    background-color: #0B0B0B;
+    padding: 0.5em 2em 3em 0.5em;
+    margin-bottom: 1em;
+}
+
+.section-article .article-img {
+    /* flex: 0 0 50% */
+}
+
+.article-img img {
+    display: block;
+    width: 25em;
+    height: 25em;
+}
+
+.section-article .article-content{
+    /* flex: 0 0 48% */
+}
+
+.article-content .article-title {
+    color: #D3BE00;
+}
+
+.article-content .article-year {
+    color: #C2C2C2;
+    display: block;
+}
+
+.section-create-video {
+    background-color: #131313;
+}
+
+.container {
+    border: 1px solid #8224e3;
+    border-radius: 0.5em;
+    width: 60em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.label {
+    width: 20em;
+    margin: 0 auto;
+    color: #FFF;
+    padding: 1em 0;
+    font-size: 1.5em;
+}
+
+.add-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 60em;
+    margin: 0 auto;
+}
+
+.container .inputs input {
+    margin: 0;
+    margin-bottom: 1em;
+    margin-left: 10em;
+    /* margin-right: 5em; */
+}
+
+
+.container input {
+    width: 40em;
+    height: 2em;
+    color: #C2C2C2;
+    margin: 0 auto;
+    display: block;
+    border:none;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #1F1F1F;
+}
+
+.container input:focus {
+    color: #000;
+    background-color: #fff;
+}

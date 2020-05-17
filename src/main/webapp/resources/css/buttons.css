@@ -1,0 +1,65 @@
+.button {
+    border: none;
+    border-radius: 0.2em;
+    color: #fff;
+    background-color: #8224e3;
+    padding: 0.5em 1em;
+    align-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.7em;
+    word-spacing: 0.2em;
+}
+
+.video-button {
+    display: block;
+    width: 18%;
+    margin-left: auto;
+    margin-top: 1.2em;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.paging-button {
+    font-size: 1em;
+    padding: 0.8em 1em;
+}
+
+.paging-button:hover {
+    background-color: #1D1E20;
+}
+
+.article-button {
+    padding: 1.5em 2em;
+    font-size: 1.5em;
+    text-transform: none;
+    background-color: #6AB165;
+}
+
+.article-button:hover {
+    background-color: #59A453;
+}
+
+.add-new-line {
+    width: 10em;
+    background-color: #59A453;
+}
+
+.create {
+    width: 10em;
+    display: block;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.delete {
+    width: 7em;
+    display: block;
+    font-size: 1em;
+    margin: 0 auto; 
+    margin-bottom: 1em;
+    background-color: #bd1bb5;
+    padding: 0.3em 1em;
+}
