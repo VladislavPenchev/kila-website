@@ -57,7 +57,7 @@ public class VideoRepositoryImpl implements VideoRepository{
         this.entityManager.getTransaction().begin();
 
         long size = this.entityManager
-                .createQuery("SELECT count(v) FROM Video v", long.class)
+                .createQuery("SELECT COUNT(v) FROM domain.entities.Video v", Long.class)
                 .getSingleResult();
 
         this.entityManager.getTransaction().commit();
@@ -73,5 +73,20 @@ public class VideoRepositoryImpl implements VideoRepository{
         this.entityManager.getTransaction().commit();
 
         return null;
+    }
+
+    @Override
+    public List<Video> findVideosByNumber(int start, int recordsPerPage) {
+        this.entityManager.getTransaction().begin();
+
+        List<Video> videosPerPage = this.entityManager
+                .createQuery("SELECT v FROM Video v order by v.id", Video.class)
+                .setFirstResult(start)
+                .setMaxResults(recordsPerPage)
+                .getResultList();
+
+        this.entityManager.getTransaction().commit();
+
+        return videosPerPage;
     }
 }
