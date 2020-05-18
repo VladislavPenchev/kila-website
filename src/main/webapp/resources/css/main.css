@@ -2,6 +2,7 @@
 
 /* event */
 
+
 .wrapper.wrapper-nav {
     display: block;
     border: 1px solid gold;
@@ -12,6 +13,122 @@
     border-radius: 0.3em;
     font-size: 14px;
 }
+
+/* add */
+.section-iframe {
+    display: block;
+    border-top: 1px solid #080808;
+    box-shadow: 0 1px 0 rgba(34, 34, 34, 0.8);
+    border-bottom: 1px solid #841fbe;
+    padding: 2em 0 4em 0;
+    margin-top: 3em;
+}
+
+.section-iframe iframe {
+    display: block;
+    width: 100%;
+    height: 50em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-lastest-videos {
+    margin: 1em 0 0 0 ;
+}
+
+/* .lastest-videos .videos-title {
+    margin: 2em 0;
+    border-bottom: 1px solid #080808;
+}
+
+.lastest-videos h2 {
+    margin:0;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #8224E3;
+    width: 20%;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 900;
+} */
+
+.section-lastest-videos ul{
+    margin: 1em 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-lastest-videos li{
+    height: 14em;
+    display: block;
+    flex: 0 0 19%;
+    list-style: none outside;
+    overflow: hidden;
+}
+
+.section-lastest-videos img {
+    display: block;
+    width: 10em;
+    height: 8em;
+    transform: translate(3%, 7%);
+}
+
+.section-lastest-videos a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 1em;
+}
+
+.load-videos ul {
+    margin: 0;
+    padding: 0;
+}
+
+.load-videos li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1A1A1A;
+    padding: 1em 0;
+}
+
+.video-image {
+    display: block;
+    overflow: hidden;
+}
+
+.video-image img{
+    display: block;
+    width: 10em;
+    height: 8em;
+}
+
+.video-content {
+    width: 80%;
+}
+
+.video-title {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    margin: 0.5em 0;
+}
+
+.video-description {
+    color: #C2C2C2;
+    font-size: 13px;
+}
+
+/* add */
+
 
 .little-nav {
     color: #FFF;

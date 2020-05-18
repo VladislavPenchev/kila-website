@@ -17,6 +17,8 @@ public class CreateVideoFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
 
+        req.setCharacterEncoding("UTF-8");
+
         if (req.getMethod().toLowerCase().equals("post")) {
             VideoBindingModel videoBindingModel = new VideoBindingModel();
             videoBindingModel.setName(req.getParameter("name"));

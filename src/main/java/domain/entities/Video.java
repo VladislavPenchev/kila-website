@@ -86,7 +86,7 @@ public class Video extends BaseEntity {
         return imageId;
     }
 
-    @Column(name = "description")
+    @Column(name = "description", columnDefinition = "text")
     public String getDescription() {
         return description;
     }
