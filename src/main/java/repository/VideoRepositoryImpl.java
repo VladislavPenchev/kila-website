@@ -63,4 +63,15 @@ public class VideoRepositoryImpl implements VideoRepository{
         this.entityManager.getTransaction().commit();
         return size;
     }
+
+    @Override
+    public List<Video> getLatestVideos() {
+        this.entityManager.getTransaction().begin();
+
+        //TODO: TOP 5
+
+        this.entityManager.getTransaction().commit();
+
+        return null;
+    }
 }

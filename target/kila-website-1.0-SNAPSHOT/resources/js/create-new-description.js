@@ -45,7 +45,7 @@ function x() {
             return;
         }
 
-        const divToDelete = document.getElementById(`divDescription-${idNumber}`)
+        document.getElementById(`divDescription-${idNumber}`)
                             .remove();
     }
 

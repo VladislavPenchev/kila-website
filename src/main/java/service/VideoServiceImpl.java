@@ -4,9 +4,11 @@ import domain.entities.Singer;
 import domain.entities.Tag;
 import domain.entities.Video;
 import domain.models.bindings.VideoBindingModel;
+import domain.models.views.LatestVideosViewModel;
 import repository.VideoRepository;
 
 import javax.inject.Inject;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -56,5 +58,20 @@ public class VideoServiceImpl implements VideoService {
                 .build();
 
         return this.videoRepository.save(video) != null;
+    }
+
+    @Override
+    public List<LatestVideosViewModel> getLatestVideosViewModel() {
+        return this.videoRepository.findAll()
+                .stream()
+                .map(v -> {
+                    LatestVideosViewModel latestVideosViewModel = new LatestVideosViewModel();
+                    latestVideosViewModel.setId(v.getId());
+                    latestVideosViewModel.setImageId("song_divi_i_shtastlivi");
+                    latestVideosViewModel.setName(v.getName());
+
+                    return latestVideosViewModel;
+                })
+                .collect(Collectors.toList());
     }
 }
