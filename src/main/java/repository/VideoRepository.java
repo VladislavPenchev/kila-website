@@ -8,4 +8,6 @@ public interface VideoRepository extends GenericRepository<Video, String>{
 
     List<Video> getLatestVideos();
 
+    List<Video> findVideosByNumber(int start, int recordsPerPage );
+
 }

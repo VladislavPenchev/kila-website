@@ -5,6 +5,7 @@ import domain.entities.Tag;
 import domain.entities.Video;
 import domain.models.bindings.VideoBindingModel;
 import domain.models.views.LatestVideosViewModel;
+import domain.models.views.VideosViewModel;
 import repository.VideoRepository;
 
 import javax.inject.Inject;
@@ -74,4 +75,27 @@ public class VideoServiceImpl implements VideoService {
                 })
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<VideosViewModel> getVideosPerPage(int currentPage, int recordsPerPage) {
+
+        int start = currentPage * recordsPerPage - recordsPerPage;
+
+        List<Video> videos = this.videoRepository.findVideosByNumber(start, recordsPerPage);
+
+
+        return videos.stream()
+                .map(v -> {
+                    VideosViewModel videosViewModel = new VideosViewModel();
+                    videosViewModel.setImageId(v.getImageId());
+                    return videosViewModel;
+                })
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public long getSize() {
+        return this.videoRepository.size();
+    }
+
 }

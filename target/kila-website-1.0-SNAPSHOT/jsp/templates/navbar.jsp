@@ -29,7 +29,7 @@
             <nav class="site-nav">
                 <ul>
                     <li>
-                        <a href="#">home</a>
+                        <a href="/">home</a>
                         <span>First page</span>
                     </li>
                     <li>
@@ -37,7 +37,7 @@
                         <span>Show dates</span>
                     </li>
                     <li>
-                        <a href="#">video</a>
+                        <a href="/videos">video</a>
                         <span>productions</span>
                     </li>
                     <li>
