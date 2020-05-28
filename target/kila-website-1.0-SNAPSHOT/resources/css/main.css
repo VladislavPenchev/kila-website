@@ -176,3 +176,20 @@
 
 
 /* video */
+
+.add-img {
+    width: 10em;
+    height: auto;
+    display: block;
+}
+
+.inputs.inp-img {
+    display: block;
+    margin: 1em 0;
+}
+
+.inputs img{
+    margin-left: 10em;
+    margin-top: 1em;
+}
+
