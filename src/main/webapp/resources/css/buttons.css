@@ -56,10 +56,27 @@
 
 .delete {
     width: 7em;
+    height: 2em;
     display: block;
     font-size: 1em;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-bottom: 1em;
     background-color: #bd1bb5;
     padding: 0.3em 1em;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.inputs.inp-img .button.add-new-line {
+    display: block;
+    margin: 0 10em;
+    padding: 0.7em 0;
+    font-size: 1em;
+}
+
+.after-upload {
+    background-color: transparent;
+    color: transparent;
 }

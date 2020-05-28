@@ -41,7 +41,7 @@
                         <span>productions</span>
                     </li>
                     <li>
-                        <a href="#">gallery</a>
+                        <a href="/pictures">gallery</a>
                         <span>party pictures</span>
                     </li>
                     <li>

@@ -18,64 +18,6 @@ public class Video extends BaseEntity {
 
     }
 
-    public static class VideoBuilder {
-        private String name;
-        private String imageId;
-        private String description;
-        private String youTubeUrl;
-        private List<Tag> tags;
-        private String time;
-        private List<Singer> singers;
-
-        public VideoBuilder setName(String name) {
-            this.name = name;
-            return this;
-        }
-
-        public VideoBuilder setImageId(String imageId) {
-            this.imageId = imageId;
-            return this;
-        }
-
-        public VideoBuilder setDescription(String description) {
-            this.description = description;
-            return this;
-        }
-
-        public VideoBuilder setYouTubeUrl(String youTubeUrl) {
-            this.youTubeUrl = youTubeUrl;
-            return this;
-        }
-
-        public VideoBuilder setTags(List<Tag> tags) {
-            this.tags = tags;
-            return this;
-        }
-
-        public VideoBuilder setTime(String time) {
-            this.time = time;
-            return this;
-        }
-
-        public VideoBuilder setSingers(List<Singer> singers) {
-            this.singers = singers;
-            return this;
-        }
-
-        public Video build() {
-            Video video = new Video();
-            video.name = this.name;
-            video.imageId = this.imageId;
-            video.description = this.description;
-            video.youTubeUrl = this.youTubeUrl;
-            video.tags = this.tags;
-            video.time = this.time;
-            video.singers = this.singers;
-
-            return video;
-        }
-    }
-
     @Column(name = "name")
     public String getName() {
         return name;
@@ -145,5 +87,63 @@ public class Video extends BaseEntity {
 
     private void setSingers(List<Singer> singers) {
         this.singers = singers;
+    }
+
+    public static class VideoBuilder {
+        private String name;
+        private String imageId;
+        private String description;
+        private String youTubeUrl;
+        private List<Tag> tags;
+        private String time;
+        private List<Singer> singers;
+
+        public VideoBuilder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public VideoBuilder setImageId(String imageId) {
+            this.imageId = imageId;
+            return this;
+        }
+
+        public VideoBuilder setDescription(String description) {
+            this.description = description;
+            return this;
+        }
+
+        public VideoBuilder setYouTubeUrl(String youTubeUrl) {
+            this.youTubeUrl = youTubeUrl;
+            return this;
+        }
+
+        public VideoBuilder setTags(List<Tag> tags) {
+            this.tags = tags;
+            return this;
+        }
+
+        public VideoBuilder setTime(String time) {
+            this.time = time;
+            return this;
+        }
+
+        public VideoBuilder setSingers(List<Singer> singers) {
+            this.singers = singers;
+            return this;
+        }
+
+        public Video build() {
+            Video video = new Video();
+            video.name = this.name;
+            video.imageId = this.imageId;
+            video.description = this.description;
+            video.youTubeUrl = this.youTubeUrl;
+            video.tags = this.tags;
+            video.time = this.time;
+            video.singers = this.singers;
+
+            return video;
+        }
     }
 }
