@@ -8,6 +8,7 @@ public class Image extends BaseEntity {
     private String name;
     private byte[] imageContent;
     private String galleryId;
+    private String discographyId;
 
     private Image() {
     }
@@ -40,10 +41,20 @@ public class Image extends BaseEntity {
         this.galleryId = galleryId;
     }
 
+    @Column(name = "discography_id")
+    public String getDiscographyId() {
+        return discographyId;
+    }
+
+    public void setDiscographyId(String discographyId) {
+        this.discographyId = discographyId;
+    }
+
     public static class ImageBuilder {
         private String name;
         private byte[] imageContent;
         private String galleryId;
+        private String discographyId;
 
         public ImageBuilder setName(String name) {
             this.name = name;
@@ -60,11 +71,17 @@ public class Image extends BaseEntity {
             return this;
         }
 
+        public ImageBuilder setDiscographyId(String discographyId) {
+            this.discographyId = discographyId;
+            return this;
+        }
+
         public Image build() {
             Image image = new Image();
             image.name = name;
             image.imageContent = imageContent;
             image.galleryId = galleryId;
+            image.discographyId = discographyId;
 
             return image;
         }

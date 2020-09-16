@@ -89,4 +89,18 @@ public class VideoRepositoryImpl implements VideoRepository{
 
         return videosPerPage;
     }
+
+    @Override
+    public List<Video> findVideosByDiscographyId(String id) {
+        this.entityManager.getTransaction().begin();
+
+        List<Video> video = this.entityManager
+                .createQuery("SELECT v FROM Video v WHERE v.discographyId = :id", Video.class)
+                .setParameter("id", id)
+                .getResultList();
+
+        this.entityManager.getTransaction().commit();
+
+        return video;
+    }
 }

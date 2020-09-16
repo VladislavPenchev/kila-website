@@ -13,6 +13,7 @@ public class Video extends BaseEntity {
     private List<Tag> tags;
     private String time;
     private List<Singer> singers;
+    private String discographyId;
 
     private Video() {
 
@@ -89,6 +90,15 @@ public class Video extends BaseEntity {
         this.singers = singers;
     }
 
+    @Column(name = "discography_id")
+    public String getDiscographyId() {
+        return discographyId;
+    }
+
+    public void setDiscographyId(String discographyId) {
+        this.discographyId = discographyId;
+    }
+
     public static class VideoBuilder {
         private String name;
         private String imageId;
@@ -97,6 +107,7 @@ public class Video extends BaseEntity {
         private List<Tag> tags;
         private String time;
         private List<Singer> singers;
+        private String discographyId;
 
         public VideoBuilder setName(String name) {
             this.name = name;
@@ -133,6 +144,11 @@ public class Video extends BaseEntity {
             return this;
         }
 
+        public VideoBuilder setDiscographyId(String discographyId) {
+            this.discographyId = discographyId;
+            return this;
+        }
+
         public Video build() {
             Video video = new Video();
             video.name = this.name;
@@ -142,6 +158,7 @@ public class Video extends BaseEntity {
             video.tags = this.tags;
             video.time = this.time;
             video.singers = this.singers;
+            video.discographyId = this.discographyId;
 
             return video;
         }

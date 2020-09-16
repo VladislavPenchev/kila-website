@@ -76,4 +76,18 @@ public class ImageRepositoryImpl implements ImageRepository {
 
         return images;
     }
+
+    @Override
+    public List<Image> findAllByDiscographyId(String id) {
+        this.entityManager.getTransaction().begin();
+
+        List<Image> images = this.entityManager
+                .createQuery("SELECT i FROM Image i WHERE i.discographyId =:id", Image.class)
+                .setParameter("id", id)
+                .getResultList();
+
+        this.entityManager.getTransaction().commit();
+
+        return images;
+    }
 }

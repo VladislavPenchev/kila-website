@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -50,11 +49,3 @@ public class CreateGalleryServlet extends HttpServlet {
         }
     }
 }
-
-//        byte[] encodeBase64 = Base64.getEncoder().encode(fileAsByteArray);
-//        String base64Encoded = new String(encodeBase64, "UTF-8");
-//
-//        req.setAttribute("m", base64Encoded);
-//
-//        req.getRequestDispatcher("/jsp/create-gallery.jsp")
-//                .forward(req, resp);

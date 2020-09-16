@@ -29,6 +29,7 @@ public class CreateVideoFilter implements Filter {
             videoBindingModel.setTime(req.getParameter("time"));
             videoBindingModel.setSingers(Arrays.asList(req.getParameterValues("singer")));
 
+
             req.setAttribute("model", videoBindingModel);
         }
 

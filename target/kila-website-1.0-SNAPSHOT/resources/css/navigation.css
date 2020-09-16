@@ -24,15 +24,17 @@
 
 .site-nav a {
     display: block;
-    padding: 0.5em 1em;
-    text-decoration: none;
     outline: none;
-    text-transform: uppercase;
     color: #FFF;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 1em 0.5em 0;
 }
 
 .site-nav span {
     display: block;
-    text-transform: capitalize;
     color: #AFAFAF;
+    text-align: left;
+    text-transform: capitalize;
 }

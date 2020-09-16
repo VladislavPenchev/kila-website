@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ImageRepository extends GenericRepository<Image, String>{
     List<Image> findAllByGalleryId(String id);
+
+    List<Image> findAllByDiscographyId(String id);
 }

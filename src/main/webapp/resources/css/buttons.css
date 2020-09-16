@@ -11,6 +11,7 @@
     font-weight: 400;
     font-size: 0.7em;
     word-spacing: 0.2em;
+    font-family: 'Oswald';
 }
 
 .video-button {
@@ -32,8 +33,10 @@
 }
 
 .article-button {
-    padding: 1.5em 2em;
-    font-size: 1.5em;
+    width: 8em;
+    display: block;
+    font-size: 1.2em;
+    padding: 0.9em 1em;
     text-transform: none;
     background-color: #6AB165;
 }
@@ -79,4 +82,25 @@ input[type="file"] {
 .after-upload {
     background-color: transparent;
     color: transparent;
+}
+
+.btn-check {
+    width: 20em;
+    display: flex;
+    justify-content: center;  
+}
+
+.btn-check label {
+    display: block;
+    font-size: 1.5em;
+    color: #FFF;
+    width: 10%;
+
+}
+
+.btn-check input {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 6em;
 }

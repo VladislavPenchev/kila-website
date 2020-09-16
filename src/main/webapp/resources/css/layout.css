@@ -34,7 +34,7 @@ body {
 
 .wrapper.wrapper-aside {
     /* max-width: 10rem; */
-    flex: 0 0 30%;
+    flex: 0 0 32%;
     margin: 0 0;
 }
 
@@ -45,6 +45,7 @@ body {
     font-size: 12px;
     padding: 2.1em 2.5em;
     background-color: #131313;
+    margin-bottom: 1.6em;
 }
 
 .site-footer .form {

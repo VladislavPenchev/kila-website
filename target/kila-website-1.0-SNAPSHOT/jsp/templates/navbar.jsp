@@ -45,7 +45,7 @@
                         <span>party pictures</span>
                     </li>
                     <li>
-                        <a href="#">discography</a>
+                        <a href="/discography">discography</a>
                         <span>album list</span>
                     </li>
                     <li>
